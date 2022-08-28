@@ -15,6 +15,7 @@ import '../css/App.css';
 // Creating the App component
 const App = () => {
 
+    // Creating a reducer variable that will contain all the states returned from the operationReducer
     const [{currentOperand, previousOperand, operation}, dispatch] = useReducer(operationReducer, {}); 
 
     return (
