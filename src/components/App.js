@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react';
+import React, { useEffect, useReducer, useRef } from 'react';
 
 // Importing costumer made components
 import { DigitButton } from './DigitButton';
@@ -8,6 +8,7 @@ import { OperationButton } from './OperationButton';
 import { formatOperand } from '../helpers/FormatOperand';
 import { operationReducer } from '../reducers/OperationReducer'
 import { ACTIONS } from '../reducers/OperationReducer';
+import { detectKeydown } from '../helpers/DetectKeyDown';
 
 // importing the stylesheet
 import '../css/App.css';
@@ -18,6 +19,16 @@ const App = () => {
     // Creating a reducer variable that will contain all the states returned from the operationReducer
     const [{currentOperand, previousOperand, operation}, dispatch] = useReducer(operationReducer, {}); 
 
+    // Adding an event listener that will listen for key strokes
+    useEffect(() => {
+        document.addEventListener('keydown', (e) => {
+            // Removing button debouncing before executing the function that will check what key was pressed
+            const timeout = 300;
+            clearTimeout();
+            setTimeout(detectKeydown(e, dispatch), timeout)
+        }, false);
+    }, []);
+
     return (
         <div className="container">
             <div className="calculator-grid">
@@ -27,7 +38,7 @@ const App = () => {
                 </div>
                 <button className="span-two" onClick={() => dispatch({ type: ACTIONS.CLEAR})}>AC</button>
                 <button onClick={() => {dispatch({ type: ACTIONS.DELETE_DIGIT, })}}>DEL</button>
-                <OperationButton operation="÷" dispatch={dispatch} />
+                <OperationButton id="1" operation="÷" dispatch={dispatch} />
                 <DigitButton digit="1" dispatch={dispatch} />
                 <DigitButton digit="2" dispatch={dispatch} />
                 <DigitButton digit="3" dispatch={dispatch} />
