@@ -9,6 +9,7 @@ import { formatOperand } from '../helpers/FormatOperand';
 import { operationReducer } from '../reducers/OperationReducer'
 import { ACTIONS } from '../reducers/OperationReducer';
 import { detectKeydown } from '../helpers/DetectKeyDown';
+import { debounce } from '../helpers/Debounce';
 
 // importing the stylesheet
 import '../css/App.css';
@@ -22,10 +23,7 @@ const App = () => {
     // Adding an event listener that will listen for key strokes
     useEffect(() => {
         document.addEventListener('keydown', (e) => {
-            // Removing button debouncing before executing the function that will check what key was pressed
-            const timeout = 300;
-            clearTimeout();
-            setTimeout(detectKeydown(e, dispatch), timeout)
+            debounce(detectKeydown(e, dispatch))
         }, false);
     }, []);
 
