@@ -22,6 +22,9 @@ export const operationReducer = (state, { type, payload }) => {
 
             // Prevents user from entering more than one 0 in case 0 is the only number displayed
             if(payload.digit === "0" && state.currentOperand === "0") return state;
+            
+            // Prevents entering a decimal point if no operand has been entered
+            if(payload.digit === "." && state.currentOperand == null) return state;
 
             // Prevents user from entering more than one period for decimal numbers
             if(payload.digit === "." && state.currentOperand.includes(".")) return state;

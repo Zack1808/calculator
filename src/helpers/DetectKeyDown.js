@@ -3,7 +3,7 @@ import { ACTIONS } from '../reducers/OperationReducer'
 
 // Function that will handle the key presses
 export const detectKeydown = (e, dispatch) => {
-    const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+    const numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'];
     const operations = ['/', '*', '-', '+'];
     if(numbers.includes(e.key)) {
         const digit = e.key;
