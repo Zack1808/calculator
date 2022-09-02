@@ -68,3 +68,18 @@ body {
     color: #ffffff;
     font-size: 2.5rem;
 }
+
+@media (max-width: 600px) {
+    .calculator-grid {
+        grid-template-columns: repeat(4, 5.1rem);
+        grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+    }
+}
+
+@media (max-height: 400px) {
+    .calculator-grid {
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 5.1rem);
+        grid-template-rows: minmax(5rem, auto) repeat(5, 3rem);
+    }
+}
