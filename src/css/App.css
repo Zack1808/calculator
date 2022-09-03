@@ -71,15 +71,31 @@ body {
 
 @media (max-width: 600px) {
     .calculator-grid {
-        grid-template-columns: repeat(4, 5.1rem);
-        grid-template-rows: minmax(9rem, auto) repeat(5, 6.5rem);
+        grid-template-columns: repeat(4, 4.5rem);
+        grid-template-rows: minmax(3.5rem, auto) repeat(5, 5rem);
+    }
+
+    .output {
+        height: 6rem;
+    }
+
+    .output .previous-operand{
+        font-size: 1rem;
+    }
+
+    .output .current-operand{
+        font-size: 1.5rem;
+    }
+
+    .calculator-grid > button {
+        font-size: 1.2rem;
     }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 600px) {
     .calculator-grid {
         margin: 0 auto;
-        grid-template-columns: repeat(4, 9rem);
+        grid-template-columns: repeat(4, 7rem);
         grid-template-rows: minmax(4.7rem, auto) repeat(5, 2.7rem);
     }
 
@@ -89,5 +105,30 @@ body {
 
     .output .current-operand{
         font-size: 1.5rem;
+    }
+    
+    .calculator-grid > button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-height: 300px) {
+    .calculator-grid {
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 7rem);
+        grid-template-rows: minmax(4rem, auto) repeat(5, 2rem);
+    }
+
+    .output .previous-operand{
+        font-size: .75rem;
+    }
+
+    .output .current-operand{
+        font-size: 1.25rem;
+    }
+
+    .calculator-grid {
+        border: 20px solid rgb(28, 28, 28);
+    border-bottom: 35px solid rgb(28, 28, 28);
     }
 }
