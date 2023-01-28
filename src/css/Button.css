@@ -6,6 +6,11 @@
   font-size: 1.25em;
 }
 
+.btn:focus,
+.btn:hover {
+  background-color: var(--light);
+}
+
 .double {
   grid-column: span 2;
 }
