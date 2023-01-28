@@ -7,7 +7,9 @@ import "../css/App.css";
 const App = () => {
   return (
     <div className="app-container">
-      <h1>Hello World</h1>
+      <div className="calculator-container">
+        <div className="display"></div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,8 @@
+:root {
+  --dark: rgb(19, 19, 19);
+  --light: rgb(49, 49, 49);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +15,31 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle at center,
-    rgb(49, 49, 49) 50%,
-    rgb(19, 19, 19)
-  );
+  background: radial-gradient(circle at center, var(--light) 50%, var(--dark));
+}
+
+.calculator-container {
+  width: 100%;
+  max-width: 500px;
+  height: 100vh;
+  max-height: 700px;
+  background-color: var(--dark);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: start;
+}
+
+.display {
+  width: 100%;
+  min-height: 150px;
+  background-color: var(--light);
+  box-shadow: inset 0 0 10px var(--dark);
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .display {
+    min-height: 100px;
+  }
 }
