@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
 :root {
   --dark: rgb(19, 19, 19);
   --light: rgb(49, 49, 49);
+  --middle: rgb(34, 34, 34);
 }
 
 * {
@@ -16,19 +20,23 @@
   justify-content: center;
   align-items: center;
   background: radial-gradient(circle at center, var(--light) 50%, var(--dark));
+  font-family: "Roboto", sans-serif;
 }
 
 .calculator-container {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   height: 100vh;
   max-height: 700px;
   background-color: var(--dark);
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
   justify-content: center;
   align-items: start;
+  box-shadow: 0 0 50px var(--dark);
 }
 
 .display {
@@ -36,6 +44,20 @@
   min-height: 150px;
   background-color: var(--light);
   box-shadow: inset 0 0 10px var(--dark);
+  font-family: "Audiowide", cursive;
+  color: white;
+  font-size: 2em;
+  user-select: none;
+  padding: 20px;
+}
+
+.buttons {
+  background-color: var(--light);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 @media (orientation: landscape) and (max-width: 900px) {

@@ -1,0 +1,11 @@
+.btn {
+  background-color: var(--middle);
+  color: white;
+  font-weight: 900;
+  box-shadow: inset 0 0 20px var(--dark);
+  font-size: 1.25em;
+}
+
+.double {
+  grid-column: span 2;
+}
