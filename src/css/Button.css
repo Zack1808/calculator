@@ -9,6 +9,7 @@
 .btn:focus,
 .btn:hover {
   background-color: var(--light);
+  outline: none;
 }
 
 .double {
