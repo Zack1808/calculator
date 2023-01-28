@@ -46,9 +46,23 @@
   box-shadow: inset 0 0 10px var(--dark);
   font-family: "Audiowide", cursive;
   color: white;
-  font-size: 2em;
+  font-size: 1.4em;
   user-select: none;
-  padding: 20px;
+  padding: 17px;
+}
+
+.previous-operand,
+.current-operand {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  overflow: hidden;
+}
+
+.current-operand {
+  font-size: 2em;
 }
 
 .buttons {

@@ -11,6 +11,7 @@ const Button = forwardRef(({ inputValue, doubleWidth, click }, ref) => {
         type="button"
         value={inputValue}
         ref={ref}
+        onClick={() => click(inputValue)}
         className={`btn ${doubleWidth ? "double" : ""}`}
       />
     );
@@ -19,6 +20,7 @@ const Button = forwardRef(({ inputValue, doubleWidth, click }, ref) => {
     <input
       type="button"
       value={inputValue}
+      onClick={() => click(inputValue)}
       className={`btn ${doubleWidth ? "double" : ""}`}
     />
   );
