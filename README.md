@@ -40,3 +40,18 @@ If you want to run the app localy:
 `npm start`
 
 After execution, the localhost server will startup and a browser window will open, previewing the calculator app.
+
+## Contribution
+
+Contributions to the Calculator project are welcome. If you find any issues or want to add new features, feel free to create a pull request. Make sure to follow the project's coding conventions and provide detailed information about your changes.
+
+## Contact
+
+If you have any questions or suggestions, you can reach me via:
+
+- Mail: [jeanpierrenovak23@gmail.com](jeanpierrenovak23@gmail.com)
+- My portfolio: [jeanpierrenovak.netlify.app](jeanpierrenovak.netlify.app)
+
+---
+
+Happy calculating!
