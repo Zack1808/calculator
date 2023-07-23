@@ -1,6 +1,6 @@
 # Calculator App
 
-![Preview of the calculator app](./public/calculator_preveiw.png){style="display: block; margin: 0 auto" }
+<p align="center"><img src="./public/calculator_preveiw.png" alt="Preview of the calculator app" /></p>
 
 ## Description
 
