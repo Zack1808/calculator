@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a simple calculator app built with React and Redux. It provides the user with basic arithmetic operations such as addition, subtraction, multiplication and division. This calculator is desgined to be easy and convenient to use for quick calculations.
+This is a simple calculator app built with React and Redux. The app responds to keyboard inputs as well as mouse clicks. It provides the user with basic arithmetic operations such as addition, subtraction, multiplication and division. This calculator is desgined to be easy and convenient to use for quick calculations.
 
 ## Features
 
@@ -31,7 +31,7 @@ If you want to run the app localy:
 
 `cd calculator`
 
-#### 3. Allow the app to install the necessary packages (Node has to be installed on the device)
+#### 3. Allow the app to install the necessary packages (Node.js has to be installed on the device)
 
 `npm install`
 
