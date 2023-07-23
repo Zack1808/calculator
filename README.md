@@ -31,7 +31,7 @@ If you want to run the app localy:
 
 `cd calculator`
 
-#### 3. Allow the app to install the necessary packages
+#### 3. Allow the app to install the necessary packages (Node has to be installed on the device)
 
 `npm install`
 
