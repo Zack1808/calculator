@@ -1,22 +1,42 @@
 # Calculator App
 
-## About the app
+![Preview of the calculator app](./public/calculator_preveiw.png)
 
-This is a simple calculator app that allows the user to perform simple operations, such as subtraction, addition, multiplication and division.
-The app is mobile compatible (responsive) and works with keyboard inputs, as well as touch input.
-The app was published at [github pages](https://zack1808.github.io/calculator).
+## Description
+
+This is a simple calculator app built with React and Redux. It provides the user with basic arithmetic operations such as addition, subtraction, multiplication and division. This calculator is desgined to be easy and convenient to use for quick calculations.
+
+## Features
+
+- Addition: perform addition of two numbers
+- Subtraction: perform subtraction of two numbers
+- Multiplication: perform multiplication of two numbers
+- Division: perform division of two numbers
+- Deleting: delete the number currently being inputed
+- Clearing: clear the whole calculator "display"
 
 ## How to run the app
 
 You can find the app up and running at [https://zack1808.github.io/calculator](https://zack1808.github.io/calculator).
 
-If you want to run the app localy, you can clone the repository. 
-After cloning and entering the repository, run the command:
+If you want to run the app localy:
 
-### `npm install`
+#### 1. Clone the repository
 
-After the exectuion of the command is completed, run the followig command:
+- HTTPS: `git clone https://github.com/Zack1808/calculator.git`
+- SSH: `git clone git@github.com:Zack1808/calculator.git`
+- GitHub CLI: `gh repo clone Zack1808/calculator`
 
-### `npm start`
+#### 2. Enter the project directory
+
+`cd calculator`
+
+#### 3. Allow the app to install the necessary packages
+
+`npm install`
+
+#### 4. Start the app
+
+`npm start`
 
 After execution, the localhost server will startup and a browser window will open, previewing the calculator app.
