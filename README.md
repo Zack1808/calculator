@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a simple React based calculator app built with React and Redux. The app responds to keyboard inputs as well as mouse clicks. It provides the user with basic arithmetic operations such as addition, subtraction, multiplication and division. This calculator is desgined to be easy and convenient to use for quick calculations.
+This is a simple calculator app built with React and Redux. The app responds to keyboard inputs as well as mouse clicks. It provides the user with basic arithmetic operations such as addition, subtraction, multiplication and division. This calculator is desgined to be easy and convenient to use for quick calculations.
 
 ## Features
 
