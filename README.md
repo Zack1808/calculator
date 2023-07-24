@@ -18,7 +18,7 @@ This is a simple calculator app built with React and Redux. The app responds to 
 
 ## Live demo
 
-You can find the app up and running at [https://zack1808.github.io/calculator](https://zack1808.github.io/calculator).
+You can try out the calculator by visiting the [live demo](https://zack1808.github.io/calculator).
 
 ## How to run the app locally
 
