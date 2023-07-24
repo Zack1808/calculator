@@ -15,9 +15,11 @@ This is a simple calculator app built with React and Redux. The app responds to 
 - Deleting: delete the number currently being inputed
 - Clearing: clear the whole calculator "display"
 
-## How to run the app
+## Live demo
 
 You can find the app up and running at [https://zack1808.github.io/calculator](https://zack1808.github.io/calculator).
+
+## How to run the app locally
 
 If you want to run the app localy:
 
